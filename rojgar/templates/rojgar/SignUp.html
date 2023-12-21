@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+    SignUp - Rojgar
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <div id="root" class="py-3">
+    <script>
+        const csrfToken = '{{ csrf_token }}'
+    </script>
+    <script src = "{% static 'js/main.js' %}"></script>
+    </div>
+{% endblock %}
